@@ -1,14 +1,13 @@
-// question 6, calculate the time
+// question 7, find the largest number
 
-function calcTime (seconds) {
-    let timerMinutes = Math.floor(seconds / 60)
-   let timerSeconds = seconds % 60
-
-    if (timerMinutes.toString().length === 1) {
-        timerMinutes = '0' + timerMinutes
+function getMax (array) {
+    let max = array[0]
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i]
+        }
     }
-    return timerMinutes + ':' + timerSeconds
-
+    return max
 }
 
-console.log(calcTime(500))
+console.log(getMax([5, 100, 0]))
