@@ -1,8 +1,10 @@
-// question 1, falsy or truthy?
+// question 2, return the length of any given array
 
 
-function falsyOrTruthy (elem1, elem2) {
-    return !elem1 ? elem1 : elem2
+function arrLength (array) {
+    return array.length
 }
 
-console.log(falsyOrTruthy(0, 500))
+arr = [1, 2, 3, 4, 5]
+
+console.log(arrLength(arr))
