@@ -1,8 +1,8 @@
-// question 10, filter out all the apples
+// question 11, filter out all the falsy values
 
-function removeApples (array) {
-    let newArr = array.filter( (element) => element !== 'Apple')
+function filterOutFalsy (array) {
+    let newArr = array.filter( (element) => !!element === true)
    return newArr
 }
 
-console.log(removeApples(['Banana', 'Apple', 'Orange', 'Apple']))
+console.log(filterOutFalsy(["", [], 0, null, undefined, "0", 500]))
