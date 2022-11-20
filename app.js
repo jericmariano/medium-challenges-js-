@@ -1,8 +1,7 @@
-// question 11, filter out all the falsy values
+// question 12, truthy to true, falsy to false
 
-function filterOutFalsy (array) {
-    let newArr = array.filter( (element) => !!element === true)
-   return newArr
+function convertToBoolean (array) {
+    return array.map( elem => !!elem)
 }
 
-console.log(filterOutFalsy(["", [], 0, null, undefined, "0", 500]))
+console.log(convertToBoolean([500, 0, "Jeric", "", []]))
