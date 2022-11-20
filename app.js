@@ -1,15 +1,12 @@
-// question 4, find the sum of an array
+// question 5, add up the numbers from a single number
 
 
-function arrSum (array) {
+function progressiveSum (elem1) {
     let sum = 0
-    for (let i = 0; i < array.length; i++) {
-        sum += array[i]
-    }
+  for (let i = 0; i <= elem1; i++) {
+    sum += i
+}
     return sum
-    
 }
 
-arr = [100, 200, 500]
-
-console.log(arrSum(arr))
+console.log(progressiveSum(600))
