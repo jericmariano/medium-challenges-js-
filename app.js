@@ -1,11 +1,10 @@
-// question 8, reverse the string
+// question 9, turn every element in an array into 0
 
-function reverseString (string) {
-    let reversedString = ''
-   for (let i = 0; i < string.length; i++) {
-        reversedString = string[i] + reversedString
+function convertToZeros (array) {
+   for (let i = 0; i < array.length; i++) {
+    array[i] = 0
    }
-   return reversedString
+   return array
 }
 
-console.log(reverseString('abc'))
+console.log(convertToZeros([5, 100, 0]))
