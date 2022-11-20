@@ -1,13 +1,11 @@
-// question 7, find the largest number
+// question 8, reverse the string
 
-function getMax (array) {
-    let max = array[0]
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] > max) {
-            max = array[i]
-        }
-    }
-    return max
+function reverseString (string) {
+    let reversedString = ''
+   for (let i = 0; i < string.length; i++) {
+        reversedString = string[i] + reversedString
+   }
+   return reversedString
 }
 
-console.log(getMax([5, 100, 0]))
+console.log(reverseString('abc'))
