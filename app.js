@@ -1,12 +1,14 @@
-// question 5, add up the numbers from a single number
+// question 6, calculate the time
 
+function calcTime (seconds) {
+    let timerMinutes = Math.floor(seconds / 60)
+   let timerSeconds = seconds % 60
 
-function progressiveSum (elem1) {
-    let sum = 0
-  for (let i = 0; i <= elem1; i++) {
-    sum += i
+    if (timerMinutes.toString().length === 1) {
+        timerMinutes = '0' + timerMinutes
+    }
+    return timerMinutes + ':' + timerSeconds
+
 }
-    return sum
-}
 
-console.log(progressiveSum(600))
+console.log(calcTime(500))
