@@ -1,10 +1,8 @@
-// question 9, turn every element in an array into 0
+// question 10, filter out all the apples
 
-function convertToZeros (array) {
-   for (let i = 0; i < array.length; i++) {
-    array[i] = 0
-   }
-   return array
+function removeApples (array) {
+    let newArr = array.filter( (element) => element !== 'Apple')
+   return newArr
 }
 
-console.log(convertToZeros([5, 100, 0]))
+console.log(removeApples(['Banana', 'Apple', 'Orange', 'Apple']))
