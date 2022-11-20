@@ -1,10 +1,15 @@
-// question 3, get the last element of the array
+// question 4, find the sum of an array
 
 
-function lastElem (array) {
-    return array[array.length - 1]
+function arrSum (array) {
+    let sum = 0
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i]
+    }
+    return sum
+    
 }
 
-arr = [1, 2, 3, 4, 5]
+arr = [100, 200, 500]
 
-console.log(lastElem(arr))
+console.log(arrSum(arr))
